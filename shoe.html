@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoe website</title>
+    <link rel="stylesheet" href="shoe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
+    <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+        <h3 class="namelogo">SHOE_A_HOLIC</h3>
+       <nav>
+            <ul class="nav__link">
+                <li><a href="#home">home</a></li>
+                <li><a href="#featured">featured</a></li>
+                <li><a href="product.html">product</a></li>
+                <li><a href="#contactus">contact us</a></li>
+                <li><a href=shop.html>Shop</a></li>
+            </ul>
+        </nav>
+        <div class="nav__shop">
+            <a href="cart.html"><i class="bx bx-shopping-bag"></i></a>
+            <a href="Signin.html">
+                <span class="iconify"  data-icon="teenyicons:signin-outline"></span>
+            </a>
+            </div>
+    </header>
+
+
+    <!-- home -->
+        <div class="homehero" id="home">
+            <img src="image/nike.jpg" class="home_img" alt="">
+        </div>
+        <div class="home_text">
+            <p class="home_para1">Just do it</p>
+            <span class="para2">sneakers of all type</span><br>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </div>
+    <!-- home -->
+
+    <!--Featured-->
+        <section style="margin-top: 130px;" class="featured section" id="featured">
+        <h2 class="section-title">Featured</h2>
+
+        <div class="featured__container bd-grid">
+
+            <article class="sneaker">
+                <div class="sneaker__sale">Sale</div>
+                <img src="image/featured1.png" alt="featured1" class="sneaker__img">
+                <span class="sneaker__name">Nike Jordan</span>
+                <span class="sneaker__price">$149.99</span>
+                <a href="#" class="btn-light">Add to Cart <i class="bx bx-right-arrow-alt btn-icon"></i></a>
+            </article>
+
+            <article class="sneaker">
+                <div class="sneaker__sale">Sale</div>
+                <img src="image/featured2.png" alt="featured2" class="sneaker__img">
+                <span class="sneaker__name">Nike Free RN</span>
+                <span class="sneaker__price">$149.99</span>
+                <a href="#" class="btn-light">Add to Cart <i class="bx bx-right-arrow-alt btn-icon"></i></a>
+            </article>
+
+            <article class="sneaker">
+                <div class="sneaker__sale">Sale</div>
+                <img src="image/featured3.png" alt="featured3" class="sneaker__img">
+                <span class="sneaker__name">Nike Free RN</span>
+                <span class="sneaker__price">$149.99</span>
+                <a href="#" class="btn-light">Add to Cart <i class="bx bx-right-arrow-alt btn-icon"></i></a>
+            </article>
+
+        </div>
+    </section>
+    <!-- feature -->
+ <section class="contactus section" id="contactus">
+    <h2 class="section-title">contact us</h2>
+      <div class="frame">
+         
+         <form action="contact us">
+             <input type="text" class="form_control" name="name" placeholder="your_name"><br>
+             <input type="email" class="form_control" name="email" placeholder="your_email"><br>
+             <textarea name="message" id="message" cols="30" class="form_control" rows="4"></textarea><br>
+             <input type="button" class="btn" value="SEND MESSAGE">
+         </form>
+      </div>
+    </section>
+    <!-- contact us ends -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container bd-grid">
+            <div class="footer__box">
+                <h3 class="footer__title">Shoezzz</h3>
+                <p class="footer__description">
+                    New collections of shoes 2020.
+                </p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">EXPLORE</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#featured" class="footer__link">Featured</a></li>
+                    <li><a href="#product" class="footer__link">product</a></li>
+                    <li><a href="shop.html" class="footer__link">shop</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">FOLLOW US</h3>
+                <a href="#" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__social"><i class="bx bxl-google"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2022 All Rights Reserved</p>
+    </footer>
+    <script src="main.js"></script>
+    <!-- footer ends -->
+</body>
+</html>

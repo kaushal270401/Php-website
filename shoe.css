@@ -1,0 +1,419 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Vairables */
+:root{ /* Mobile */
+    --header-height: 3rem;
+
+    /* Font Weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Colors */
+    --main-color: #fe6d46;
+    --dark-color: #141414;
+    --dark-gray: #8a8a8a;
+    --light-color: #f2f2f2;
+    --white-color: #fff;
+
+    /* Font Family and Size */
+    --body-font: 'Poppins', sans-serif;
+    --small-font-size: .813rem;
+    --normal-font-size: .938rem;
+    --big-font-size: 1.25rem;
+    --bigger-font-size: 1.5rem;
+    --biggest-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+
+    /* Margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* Z-index */
+    --z-fixed: 100;
+
+    /* Rotate img */
+    --rotate-img: rotate(-30deg)
+}
+
+@media screen and (min-width: 768px){ /* Descktop */
+    :root{
+        --small-font-size: .875rem;
+        --normal-font-size: 1rem;
+        --big-font-size: 1.5rem;
+        --bigger-font-size: 2rem;
+        --biggest-font-size: 3rem;
+    }
+}
+body{
+    margin:  0 ;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+/* Class Css */
+.section{
+    padding: 5rem 0 2rem;
+}
+
+.section-title{
+    position: relative;
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: .18rem;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--dark-color);
+}
+
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+/* Buttons */
+.btn{
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 1.125rem 2rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-.25rem);
+    color: red;
+}
+.btn-light:hover .btn-icon{transform: translateX(.25rem);}
+.btn-light{
+    display: inline-flex;
+    color: var(--dark-color);
+    font-weight: var(--font-bold);
+    align-items: center;
+}
+
+.btn-icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-1);
+    transition: .3s;
+}
+.btn-dark{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    background-color: #141414;
+}
+.btn-dark a{
+    color: white;
+    text-decoration: none;
+}
+.btn-dark a:hover{
+    color: red;
+}
+.remover{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+header{
+    background-color:#141414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.nav__link{
+    list-style: none;
+}
+.nav__link li{
+    display: inline-block;
+    padding:0 20px;
+   
+
+}
+.nav__link li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+.nav__link li a:hover{
+   color:red;
+}
+.namelogo{
+    color:#fff;
+}
+.nav__shop{
+    color:white;
+    height: 20px;
+}
+.bx-shopping-bag {
+    color: white;
+    margin:5px;
+}
+.iconify{
+    color: white;
+   margin-right: 5px;
+}
+.bx-shopping-bag:hover{
+    color:red;
+}
+.iconify:hover{
+    color:red;
+}
+/* home */
+.home_text{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.homehero{
+    margin-top: 30px;
+}
+.home_img{
+    float: right;
+    width: 50%;
+    height: 500px;
+    width: 700px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.home_para1{
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-2);
+    text-transform: uppercase;
+}
+.para2{
+    font-size: var(--bigger-font-size);
+    margin-bottom: var(--mb-1);
+    text-transform: uppercase;
+}
+.btn{
+    margin-top: 50px;
+    text-decoration: none;
+}
+/* Featuerd */
+.featured__container{
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 100px;  
+    margin-left: 250px;
+}
+
+.sneaker{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.sneaker:hover{transform: translateY(-.5rem);}
+
+.sneaker__sale{
+    position: absolute;
+    left: -.25rem;
+    background-color:red;
+    color: var(--white-color);
+    padding: .25rem .5rem;
+    font-size: var(--h2-font-size);
+    /* transform: rotate(-90deg); */
+    letter-spacing: .1rem;
+    border-radius: .25rem;
+}
+
+.sneaker__img{
+    width: 220px;
+    margin-top: var(--mb-3);
+    margin-bottom: var(--mb-6);
+    transform: var(--rotate-img);
+    filter: drop-shadow(0 12px 8px rgba(0, 0, 0, .5));
+}
+
+.sneaker__name, .sneaker__price{
+    font-size: var(--h2-font-size);
+    letter-spacing: .1rem;
+    font-weight: var(--font-bold);
+}
+
+.sneaker__name{margin-bottom: var(--mb-1);}
+
+.sneaker__price{margin-bottom: var(--mb-4);}
+
+/*  feature end*/
+
+/* Women */
+.women__container{
+    row-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* Footer */
+.footer{
+    padding: 5rem 0 2rem;
+    padding-left: 200px;
+    background-color: #141414;
+    padding-right: 220px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.footer__container{grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));}
+
+.footer__box{margin-bottom: var(--mb-4);}
+
+.footer__title{
+    font-size: var(--big-font-size);
+    color:white;
+}
+
+.footer__link{
+    display: block;
+    width: max-content;
+    margin-bottom: var(--mb-1);
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.footer__link:hover{text-decoration: underline;}
+
+.footer__social{
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: var(--dark-gray);
+    transition: .3s;
+}
+
+.footer__social:hover{color: red;}
+
+.footer__copy{
+    padding-top: 3rem;
+    font-size: var(--small-font-size);
+    color: var(--dark-gray);
+    text-align: center;
+    cursor: pointer;
+}
+.footer__description{
+    color:white;
+}
+
+.footer__copy:hover{color: #141414;}
+/* CART0 */
+#cart_container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+#cart_container table thead{
+  font-weight: 700;
+}
+#cart_container table thead
+{
+  background: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+  }
+  /* Shop Page */
+.sneaker__pages{margin-top: var(--mb-6);
+    margin: 100px;
+}
+
+.sneaker__pag{
+    padding: .5rem 1rem;
+    border: 1px solid var(--dark-color);
+    border-radius: .5rem;
+    transition: .3s;
+   
+}
+
+.sneaker__pag:hover{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+/* contact us */
+.frame{
+    background-color:var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.form_control{
+   font-size: var(--small-font-size);
+   font-family: var(--small-font-size);
+   color: var(--dark-color); 
+   margin: 10px;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid black;
+   background: transparent;
+}
+/* cart */
+.container{
+    margin: auto;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+.col-md-, .col-lg-4{
+    margin-bottom: 20px;
+}
+.sty{
+    font-size: 18px !important;
+    color: black !important;
+}
+.num{
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.uk-border-circle{
+    width: 100px !important;
+    height: 100px !important;
+}
+.fa-cart-arrow-down{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+}

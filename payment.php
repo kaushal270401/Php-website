@@ -1,0 +1,86 @@
+<?php include('includes/header.php'); ?>
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylepay.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Payment</title>
+</head>
+<body> 
+    
+        <div class="Cart-Container">
+            <div class="hell">
+            <div class="container mt-5 px-5">
+                <div class="mb-4">
+                    <h2>Confirm order and pay</h2> <span>please make the payment, after that you can enjoy all the features and benefits.</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card p-3">
+                            <form action="code.php" method="post">
+                            <h6 class="text-uppercase">Payment details</h6>
+                            <div class="inputbox mt-3"> <input type="text" name="card_name" class="form-control" required="required"> <span>Name on card</span> </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="card_number" max="12" class="form-control" required="required"> <i class="fa fa-credit-card"></i> <span>Card Number</span> </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-row">
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="expiry" class="form-control" required="required"> <span>Expiry</span> </div>
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="cvv" class="form-control" required="required"> <span>CVV</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 mb-4">
+                                <h6 class="text-uppercase">Billing Address</h6>
+                                <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="address" class="form-control" required="required"> <span>Street Address</span> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="city" class="form-control" required="required"> <span>City</span> </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-6">
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="state" class="form-control" required="required"> <span>State/Province</span> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputbox mt-3 mr-2"> <input type="text" name="zipcode" class="form-control" required="required"> <span>Zip code</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-4 d-flex justify-content-between"><button class="btn btn-success px-3" name="paybtn">Pay</button> </div>
+                        <div class="mt-4 mb-4 d-flex justify-content-between"> 
+                            <a href="./index.html" class="btn btn-warning">Continue Shopping</a>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+<?php include('includes/footer.php'); ?>
